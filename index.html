@@ -5,19 +5,19 @@
         <meta charset="utf-8">
         <title>Booki.com</title>
 
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/abe246d05c.js" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/abe246d05c.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Solitreo&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <nav>
-                <img src="images/logo/Booki.png" alt="logo Booki">
-                <ul>
-                    <li><a href="hebergements.html">Hébergements</a></li>
-                    <li><a href="activites.html">Activités</a></li>
+            <nav class="header">
+                <img class="logo-booki" src="images/logo/Booki.png" alt="logo Booki" >
+                <ul class="main-menu">
+                    <li><a href="">Hébergements</a></li>
+                    <li><a href="">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,10 +26,19 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
                 <div class="search-container">
-                    <i class="fa-solid fa-location-dot"></i>
+                    
                     <form>
-                        <input type="search" placeholder="Marseille, France">
-                        <button type="submit">Rechercher</button>
+                        <div class="search-bar">
+                            <div class="location-dot">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="search-form">
+                                <input class="input-search" type="search" placeholder="Marseille, France">
+                            </div>
+                            <div class="submit-button-container">
+                                <button type="submit">Rechercher</button>
+                            </div>
+                        </div>   
                     </form>
                 </div>
                 <div class="filters-container">
