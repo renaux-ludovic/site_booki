@@ -1,7 +1,8 @@
 /* general properties */
 body{
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-top: auto;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 ul{
     list-style-type: none;
@@ -21,80 +22,73 @@ h1, p {
     line-height: 0.5em;
   }
      
-
 /* header properties */
-.header{
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
+    align-items:center;
 }
 .logo-booki{
-    width: 61px;
-    height: 19px;
-    padding-top: 50px;
+    width: 60px;
+    height: 20px;
 }
 .main-menu{
     display: flex;
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
-    right: 20px;
-    margin-right: -50px;
+}
+.main-menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.main-menu li{
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .main-menu a{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;   
-}
-.main-menu li{
-    padding-top: 50px;
-    width: 162px;
-    text-align: center;
-}
-.main-menu a:hover{
-    color:#0065FC;
+    font-size: 16px;
 }
 .main-menu li:hover{
     border-top: 2px solid #0065FC;
 }
+.main-menu a:hover{
+    color: #0065FC;
+    }
+
 
 /* search section */
 .search-section{
-    margin-top: 70px;
+    margin-top: 30px;
 }
 .search-section p{
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
 }
-.search-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    height: 49px ; 
+    margin-top:30px;
 }
-form{
-    display: flex;
-    flex-direction: row;
-  }
- .search-bar{
-    display: flex;
-    flex-direction: row;
-    
-  }
 
 /* location dot rules */
 .location-dot{
     border:1px solid #f2f2f2;
     background-color: #f2f2f2;
     
-    width: 49px;
+    width: 45px;
     border-radius: 15px 0px 0px 15px;
 
     display: flex;
@@ -115,15 +109,16 @@ input[type="search"] {
     border: none;
     outline: none;    
   }
+
 .search-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    border:1px solid #f2f2f2;
-    border-right: none;
-    width: 188px;
+    border-top:1px solid #f2f2f2;
+    border-bottom:1px solid #f2f2f2;
+    width: 245px;
     padding-top:3px;
 }
 .input-search::placeholder{
@@ -132,16 +127,10 @@ input[type="search"] {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    
-    
 }
 
-
-
-
-  
 /* submit button rules: */
-button[type="submit"] {
+input[type="submit"] {
     border: none;
     outline: none;
     background-color: transparent;
@@ -152,17 +141,197 @@ button[type="submit"] {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    padding: 2px;
-    
-    
-    /* padding-bottom: 4px; */
   }
 .submit-button-container{
     background-color: #0065FC;
-    padding: 15px 16px 15px 16px;
+    padding: 13px;
     border-radius: 0px 15px 15px 0px;
+}
+/* Filter properties */
+
+.filter-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+.filter-container p{
+    margin-right: 20px; 
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;  
+}
+
+.filter{
+    border-radius: 25px;
+    margin-right: 40px;
+    height: 48px;
+    padding: 5px 15px  5px 10px;
+    border: 2px solid #D9D9D9;;
+    background: none;
+    cursor: pointer;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;  
+}
+
+.filter i{
+    color: #0065FC;
+    padding: 5px;
+}
+
+.filter:hover{
+    background-color:#DEEBFF;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 35px;
+}
+
+.info-circle{
+    width: 15px;
+    height: 15px;
+    border: #D9D9D9 solid 1px;
+    border-radius: 50%;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+.info-circle i{
+    font-size: 15px;
+    color: #0065FC;
+}
+
+.info-container p{
+    margin: 10px;
+
+}
+
+  /* results porperties */
+.results-section{;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap:3%
+}
+.results-section h2{;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 20px;
+}
+.city-results{
+    width: 62%;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+    padding: 0px 40px 40px 40px;
+}
+.popular-results{
+    width: 25%;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.city-result-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+ .popular-grid{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
 }
 
 
+/* result-card porperties */
 
-  
+.acccomodation-card{
+    background-color:white;
+    width:30%;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 2px 3px 23px 4px rgba(0,0,0,0.2)
+}
+.picture-container img{
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+.acccomodation-card h3, .popular-card h3{
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+}
+.acccomodation-card p, .popular-card p{
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+}
+.accomodation-caption, .popular-caption{
+    padding-left: 16px;
+    padding-bottom: 10px;
+}
+.rate-stars i{
+    color: #0065FC;
+}
+.gray-star i{
+    color:#F2F2F2;
+}
+
+.show-more-button{
+border: none;
+cursor: pointer;
+
+font-family: Raleway;
+font-size: 18px;
+font-weight: 700;
+}
+
+/* Popular properties */
+
+.popular-card{
+    background-color:white;
+    width: 100%;
+    height: 144px;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 2px 3px 23px 4px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.popular-picture-container img{
+    width: 137px;
+    height: 144px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
