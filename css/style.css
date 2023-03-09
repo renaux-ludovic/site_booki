@@ -1,7 +1,6 @@
 /* general properties */
 body{
-    m
-    margin-top:auto;
+    margin-top:0;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 0;
@@ -295,7 +294,7 @@ input[type="submit"]{
     line-height: 19px;
     text-align: left;
 }
-.acccomodation-card p, .popular-card p,{
+.acccomodation-card p, .popular-card p{
     font-family: 'Raleway';
     font-size: 14px;
     font-weight: 600;
