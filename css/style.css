@@ -4,8 +4,11 @@ html{
     margin: auto;
 }
 body{
-    margin: 0 50px 0 50px;
-
+    
+    margin-top:auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0;
 }
 ul{
     list-style-type: none;
@@ -296,12 +299,23 @@ button[type="submit"]{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.accommodation-caption-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 15px;
-    margin-bottom: 5px;
+.acccomodation-card h3, .popular-card h3,.activities-caption h3{
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+}
+.acccomodation-card p, .popular-card p,{
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+}
+.accomodation-caption, .popular-caption, .activities-caption{
+    padding-left: 16px;
+    padding-bottom: 10px;
 }
 .rate-stars i{
     font-size: 12px;
